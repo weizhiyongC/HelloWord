@@ -1,7 +1,8 @@
-#ifndef WIDGET_H
+﻿#ifndef WIDGET_H
 #define WIDGET_H
 
 #include <QWidget>
+#include <QMainWindow>
 
 class Widget : public QWidget
 {
@@ -10,6 +11,10 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = 0);
     ~Widget();
+
+private:
+    QMainWindow *showDataWidget;
+
 };
 
 #endif // WIDGET_H
